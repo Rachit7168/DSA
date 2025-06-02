@@ -6,6 +6,7 @@ def brute_force(num):
             result.append(i)
     return result
 
+
 # TODO : Better Solution
 def better_sol(num):
     result = []
@@ -17,9 +18,7 @@ def better_sol(num):
 
 
 # TODO : Optimized Sol
-
 from math import sqrt
-
 def optimized_sol(num):
     result = []
     for i in range(1 , int(sqrt(num)) + 1):
@@ -29,5 +28,3 @@ def optimized_sol(num):
                 result.append(num//i)
     result.sort()
     return result
-
-print(optimized_sol(6))
