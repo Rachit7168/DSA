@@ -1,3 +1,5 @@
+# Code to count the frequency of all elements from 1 to N in the array.
+
 list1 = [5 , 3 , 2 , 2 , 1 , 5 , 5 , 7 , 5 , 10]
 m = [10 , 111 , 1 , 9 , 5 , 67 , 2]
 
