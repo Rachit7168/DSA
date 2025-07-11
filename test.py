@@ -1,8 +1,9 @@
-n = 4
-for i in range(n):
-    print(" " * (n - i) , end=" ")
-    num = 1
-    for j in range(i + 1):
-        print(num , end=" ")
-        num = num * (i - j) // (j + 1)
-    print()
+nums = [9,2,6,5,0,1,9,6,1,9]
+
+
+freq_map = {}
+
+for i in range(0 , len(nums)):
+    freq_map[nums[i]] = freq_map.get(nums[i] , 0) + 1
+    print(freq_map)
+

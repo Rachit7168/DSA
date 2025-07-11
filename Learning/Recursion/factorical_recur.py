@@ -4,6 +4,8 @@
 
 # Functional Recursion (Return value used in recursive expression)
 def factorial(n):
+    if n is not int :
+        return TypeError
     if n == 1:
         return 1
     return n * factorial(n - 1)
@@ -13,4 +15,4 @@ def factorial(n):
 # ----------------------------------------
 
 # Q5:
-print(factorial(7))       # Output: 5040
+print(factorial("abc"))       # Output: 5040
