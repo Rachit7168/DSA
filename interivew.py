@@ -10,12 +10,14 @@ for i in range(1 , n + 1):
 
 # Array 
 arr = [0, 1, 0, 3, 12]
-def move_zeros(arr):
-    for i in range(len(arr)):
-        for j in range(i + 1 , len(arr)):
-            if arr[i] == 0 and arr[j] != 0 :
-                arr[i] , arr[j] = arr[j] , arr[i]
-                break
-    return arr
-print(move_zeros(arr))
 
+i = 0
+j = i + 1
+
+while j < len(arr):
+    if arr[i] == 0 and arr[j] != 0:
+        arr[i], arr[j] = arr[j], arr[i]
+        i += 1
+    j += 1
+
+print(arr)

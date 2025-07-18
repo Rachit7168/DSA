@@ -1,9 +1,17 @@
-nums = [9,2,6,5,0,1,9,6,1,9]
+nums1 = [1,2,3]
+m = 3 
+nums2 = [2,5,6]
+n = 3
 
+# Extend nums1 to length m+n
+while len(nums1) < m + n:
+    nums1.append(0)
 
-freq_map = {}
+# Copy both arrays' relevant parts into one list, sort it
+merged = sorted(nums1[:m] + nums2)
 
-for i in range(0 , len(nums)):
-    freq_map[nums[i]] = freq_map.get(nums[i] , 0) + 1
-    print(freq_map)
+# Update nums1 in place
+for i in range(m + n):
+    nums1[i] = merged[i]
 
+print(nums1)

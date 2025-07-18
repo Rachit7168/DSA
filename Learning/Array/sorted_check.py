@@ -1,8 +1,12 @@
-nums = [1,1,2]
+nums = [6, 6, 7, 9, 9, 2, 1, 6]
 
-seen = []
+seen = set()
+i = 0
 
-for i in range(0 , nums(len) - 1):
-    if nums[i] in seen:
-        
+for j in range(len(nums)):
+    if nums[j] not in seen:
+        seen.add(nums[j])
+        nums[i] = nums[j]
+        i += 1
 
+print(nums[:i])   # unique elements
