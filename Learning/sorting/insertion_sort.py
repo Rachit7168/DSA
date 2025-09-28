@@ -1,5 +1,8 @@
 nums = [5, 7, 8, 4, 1, 6, 9, 2]
-
+# 5 7 8 8 1 
+# 5 7 7 8
+# 5 5 7 8
+# 4 5 7 8
 n = len(nums)
 for i in range(1, n):  # i = index of the "key" to insert
     key = nums[i]      # current element to insert
